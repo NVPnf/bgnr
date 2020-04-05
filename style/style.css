@@ -61,7 +61,13 @@ legend {
     font: bold 20px serif;
 }
 
-/* рамка появляется при наведении*/
+
+img {
+    outline-color: gray;
+    outline-style: double;
+    outline-width: thin;
+}
+/* рамка меняется при наведении*/
 img:hover {
     outline: 3px solid #7F3F3F;
 }
