@@ -40,9 +40,11 @@ h3 {
     color: dimgray;
     font-weight: 900;
     line-height: 25px;
-    list-style-type: georgian
+    list-style-image: url(../imgs/snow.png);
 }
-
+.nested_list {
+    list-style-image: none;
+}
 .price + p {
     font: bold 14px sans-serif;
 }
