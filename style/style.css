@@ -37,6 +37,7 @@ h3 {
     color: dimgray;
     font-weight: 900;
     line-height: 25px;
+    list-style-type: georgian
 }
 
 .price + p {
