@@ -1,16 +1,19 @@
 html {
     background-color: #f8f8f8;
-    }
+}
 
 .menu li {
     list-style-type: none;
     font: bold 15px;
     color: #4D4D4D;
 }
+
 .menu li a {
     color: darkgray;
     font-size: 18px;
-    text-decoration: none;}
+    text-decoration: none;
+}
+
 h1,
 h3 {
     color: black;
@@ -42,9 +45,11 @@ h3 {
     line-height: 25px;
     list-style-image: url(../imgs/snow.png);
 }
+
 .nested_list {
     list-style-image: none;
 }
+
 .price + p {
     font: bold 14px sans-serif;
 }
@@ -72,13 +77,14 @@ img {
     outline-style: double;
     outline-width: thin;
 }
+
 /* рамка меняется при наведении*/
 img:hover {
     outline: 3px solid #7F3F3F;
 }
 
-.catalog, 
-footer{
+.catalog,
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
