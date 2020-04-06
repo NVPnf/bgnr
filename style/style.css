@@ -14,6 +14,16 @@ html {
     text-decoration: none;
 }
 
+
+.menu a:hover {
+    text-decoration: underline;
+    background-color: gainsboro;
+}
+
+.menu a:visited:hover {
+    color: blueviolet;
+}
+
 h1,
 h3 {
     color: black;
@@ -71,11 +81,30 @@ legend {
     font: bold 20px serif;
 }
 
+input[type="email"] {
+    color: blue;
+    background-color: ;
+    height: 25px;
+    width: 300px;
+    font: bold 20px serif;
+}
+input[type="email"]:focus {
+    background: lightblue;
+    color: green;
+}
+input[type="text"],
+textarea {
+    text-transform: capitalize;
+}
 
 img {
     outline-color: gray;
     outline-style: double;
     outline-width: thin;
+}
+
+img:hover {
+    outline: none;
 }
 
 .catalog,
@@ -100,17 +129,10 @@ header img[alt="Логотип магазина"] {
     align-self: center;
 }
 
-.menu a:hover {
-    text-decoration: overline;
-    background-color: gainsboro;
+fieldset {
+    width: 250px;
 }
 
-.menu a:active {
-    color: green;
-}
-.menu a:link{
-    color: blue;
-}
-.menu a:visited {
-    color: blueviolet;
+fieldset:nth-last-of-type(2) {
+    color: aqua
 }
