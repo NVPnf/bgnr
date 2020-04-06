@@ -56,6 +56,14 @@ h3 {
     list-style-image: url(../imgs/snow.png);
 }
 
+.price + p:first-letter,
+.short + p:first-letter,
+.detailed + p:first-letter {
+    font-style: italic;
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
 .nested_list {
     list-style-image: none;
 }
@@ -88,10 +96,12 @@ input[type="email"] {
     width: 300px;
     font: bold 20px serif;
 }
+
 input[type="email"]:focus {
     background: lightblue;
     color: green;
 }
+
 input[type="text"],
 textarea {
     text-transform: capitalize;
@@ -115,6 +125,10 @@ footer {
     justify-content: center;
 }
 
+.catalog {
+    list-style-type: none;
+}
+
 header img {
     outline: none;
     width: 100px;
@@ -135,4 +149,21 @@ fieldset {
 
 fieldset:nth-last-of-type(2) {
     color: aqua
+}
+
+table {
+    border: 1px solid red;
+    border-collapse: collapse;
+    text-align: center
+}
+
+table td {
+    border: 1px solid red;
+    height: 70px;
+    width: auto;
+}
+
+table thead td {
+    background-color: antiquewhite;
+    height: 100px;
 }
