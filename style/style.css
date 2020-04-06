@@ -78,15 +78,39 @@ img {
     outline-width: thin;
 }
 
-/* рамка меняется при наведении*/
-img:hover {
-    outline: 3px solid #7F3F3F;
-}
-
 .catalog,
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+header img {
+    outline: none;
+    width: 100px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header img[alt="Логотип магазина"] {
+    align-self: center;
+}
+
+.menu a:hover {
+    text-decoration: overline;
+    background-color: gainsboro;
+}
+
+.menu a:active {
+    color: green;
+}
+.menu a:link{
+    color: blue;
+}
+.menu a:visited {
+    color: blueviolet;
 }
