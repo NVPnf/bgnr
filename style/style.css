@@ -6,18 +6,57 @@ html {
     list-style-type: none;
     font: bold 15px;
     color: #4D4D4D;
+    display: inline-flex;
+    justify-content: center;
+    flex-flow: wrap;
+    border: 1px solid #ccc;
+    height: 100px;
+    width: 30%;
+    text-align: center;
+    
 }
 
 .menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
     color: darkgray;
     font-size: 18px;
+    background-color: azure;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
+.menu li ul {
+    display: none;
+}
+
+.menu li ul > li {
+    display: block;
+    color: darkgray;
+}
+
+.menu li:hover ul {
+    display: block;
+    position: absolute;
+    color: #369877;
+    padding: inherit;
+    
+}
+
+.menu li:hover ul a {
+    display: block;
+    width: 250%;
+    height: 100%;
+    text-transform: none;
+    background-color: aliceblue;
+    line-height: normal;
+}
 
 .menu a:hover {
     text-decoration: underline;
-    background-color: gainsboro;
+    background-color: aliceblue;
+    color: blue;
 }
 
 .menu a:visited:hover {
