@@ -3,12 +3,15 @@ html {
 }
 
 .header {
-    display: block;
-    height: 150px;
-
+    height: 200px;
+    position: relative;
+    background-image: url(https://www.pngitem.com/pimgs/m/301-3014399_fire-ice-combat76-transparent-fire-and-ice-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.header .logo {
+.logo img {
     display: block;
     float: left;
     outline: none;
@@ -17,69 +20,65 @@ html {
     margin-top: 50px;
 }
 
-.menu {
+
+.menu li {
+    display: inline-block;
     list-style-type: none;
-    background-color: #E6E6FA;
-    display: block;
-    float: left;
-    width: 600px;
+    float: right;
+    background-color: transparent;
     height: 100px;
+    width: 200px;
+    margin-top: 50px;
+    outline: 3px solid;
+    
 }
 
-.header .menu li {}
-
-.header .menu li a {
+.menu li a {
     display: block;
-
-    color: darkgray;
-    font-size: 18px;
-    background-color: #E6E6FA;
+    color: black;
+    font: 30px bold;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
     width: 100%;
     height: 100%;
 }
 
-.header .menu ul {
-    clear: both;
-    display: block;
-}
-
-.header .container {
-    position: relative
-}
-
-/*
 .menu li ul li {
     clear: both;
     visibility: hidden;
     margin-left: -2em;
-    height: 70px;
-    width: 200px;
- 
-    transition: all 0, 5s ease;
-}
-
+    height: 150px;
+  }
 
 .menu li:hover ul li {
     visibility: visible;
     clear: both;
-    margin-left: -2em;
+    margin-left: 2em;
+    height: 120px;
+    width: 250px;
+    margin-top: 0px;
     transition: all 0.6s ease;
 }
-
-*/
 
 .menu li a:hover {
     text-decoration: underline;
     color: blue;
+    background-color: lightblue;
 }
 
+.container {
+    height: 150px;
+    width: 150px;
+    outline: 1px solid red;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
 
 main {
     clear: both;
 }
-
 
 h1,
 h3 {
@@ -127,6 +126,10 @@ h3 {
 
 .price + p {
     font: bold 14px sans-serif;
+}
+
+.price {
+    clear: both;
 }
 
 .contacts + ul {
@@ -186,6 +189,11 @@ img:hover {
     width: auto;
 }
 
+.catalog img {
+    width: 150px;
+    height: 100px;
+}
+
 fieldset {
     width: 250px;
 }
@@ -211,31 +219,11 @@ table thead td {
     height: 100px;
 }
 
-footer {
-    display: block;
-    height: 80px;
-    background-color: #C9C9FA;
-    text-align: end;
-    padding-top: 50px;
-    padding-right: 30px;
-
-}
-
 .image_for_sale {
     display: block;
     float: left;
     margin-right: 5px;
     margin-top: 0px;
-}
-
-.catalog img {
-
-    width: 150px;
-    height: 100px;
-}
-
-.price {
-    clear: both;
 }
 
 button {
@@ -260,4 +248,14 @@ button:active {
 iframe {
     width: 100%;
     height: 374px;
+}
+
+
+footer {
+    display: block;
+    height: 80px;
+    background-color: #C9C9FA;
+    text-align: end;
+    padding-top: 50px;
+    padding-right: 30px;
 }
