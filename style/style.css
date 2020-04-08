@@ -2,74 +2,92 @@ html {
     background-color: #f8f8f8;
 }
 
-.menu li {
-    list-style-type: none;
-    font: bold 15px;
-    color: #4D4D4D;
-    display: inline-flex;
-    justify-content: center;
-    flex-flow: wrap;
-    border: 1px solid #ccc;
-    height: 100px;
-    width: 30%;
-    text-align: center;
-    
+.header {
+    display: block;
+    height: 150px;
+
 }
 
-.menu li a {
+.header .logo {
     display: block;
-    width: 100%;
-    height: 100%;
+    float: left;
+    outline: none;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.menu {
+    list-style-type: none;
+    background-color: #E6E6FA;
+    display: block;
+    float: left;
+    width: 600px;
+    height: 100px;
+}
+
+.header .menu li {}
+
+.header .menu li a {
+    display: block;
+
     color: darkgray;
     font-size: 18px;
-    background-color: azure;
+    background-color: #E6E6FA;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.menu li ul {
-    display: none;
-}
-
-.menu li ul > li {
-    display: block;
-    color: darkgray;
-}
-
-.menu li:hover ul {
-    display: block;
-    position: absolute;
-    color: #369877;
-    padding: inherit;
-    
-}
-
-.menu li:hover ul a {
-    display: block;
-    width: 250%;
+    width: 100%;
     height: 100%;
-    text-transform: none;
-    background-color: aliceblue;
-    line-height: normal;
 }
 
-.menu a:hover {
+.header .menu ul {
+    clear: both;
+    display: block;
+}
+
+.header .container {
+    position: relative
+}
+
+/*
+.menu li ul li {
+    clear: both;
+    visibility: hidden;
+    margin-left: -2em;
+    height: 70px;
+    width: 200px;
+ 
+    transition: all 0, 5s ease;
+}
+
+
+.menu li:hover ul li {
+    visibility: visible;
+    clear: both;
+    margin-left: -2em;
+    transition: all 0.6s ease;
+}
+
+*/
+
+.menu li a:hover {
     text-decoration: underline;
-    background-color: aliceblue;
     color: blue;
 }
 
-.menu a:visited:hover {
-    color: blueviolet;
+
+main {
+    clear: both;
 }
+
 
 h1,
 h3 {
     color: black;
     font: bold 18px;
-    background-color: #eaeaea;
+    background-color: #E6E9FA;
     font-weight: 400;
-    text-align: center
+    text-align: center;
 }
 
 /*.short - Описание товара, Дополнительно, Примечание*/
@@ -77,7 +95,7 @@ h3 {
     color: #707070;
     font: 14px;
     font-style: italic;
-    line-height: 16px;
+    overflow: hidden;
 }
 
 .detailed + p {
@@ -156,30 +174,16 @@ img:hover {
     outline: none;
 }
 
-.catalog,
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .catalog {
-    list-style-type: none;
-}
-
-header img {
-    outline: none;
-    width: 100px;
-}
-
-header {
     display: flex;
-    flex-direction: column;
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-header img[alt="Логотип магазина"] {
-    align-self: center;
+.catalog li {
+    display: block;
+    width: auto;
 }
 
 fieldset {
@@ -205,4 +209,55 @@ table td {
 table thead td {
     background-color: antiquewhite;
     height: 100px;
+}
+
+footer {
+    display: block;
+    height: 80px;
+    background-color: #C9C9FA;
+    text-align: end;
+    padding-top: 50px;
+    padding-right: 30px;
+
+}
+
+.image_for_sale {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.catalog img {
+
+    width: 150px;
+    height: 100px;
+}
+
+.price {
+    clear: both;
+}
+
+button {
+    display: block;
+    clear: both;
+    float: left;
+    width: 300px;
+    height: 30px;
+}
+
+button:hover {
+    font: 20px bold;
+    background-color: dimgrey;
+}
+
+button:active {
+    color: green;
+    font: 20px bold;
+    background-color: dimgrey;
+}
+
+iframe {
+    width: 100%;
+    height: 374px;
 }
