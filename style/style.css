@@ -1,261 +1,29 @@
-html {
-    background-color: #f8f8f8;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.header {
-    height: 200px;
-    position: relative;
-    background-image: url(https://www.pngitem.com/pimgs/m/301-3014399_fire-ice-combat76-transparent-fire-and-ice-png.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+html,
+body {
+	height: 100%;
 
-.logo img {
-    display: block;
-    float: left;
-    outline: none;
-    width: 100px;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-
-.menu li {
-    display: inline-block;
-    list-style-type: none;
-    float: right;
-    background-color: transparent;
-    height: 100px;
-    width: 200px;
-    margin-top: 50px;
-    outline: 3px solid;
-    
-}
-
-.menu li a {
-    display: block;
-    color: black;
-    font: 30px bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-
-.menu li ul li {
-    clear: both;
-    visibility: hidden;
-    margin-left: -2em;
-    height: 150px;
-  }
-
-.menu li:hover ul li {
-    visibility: visible;
-    clear: both;
-    margin-left: 2em;
-    height: 120px;
-    width: 250px;
-    margin-top: 0px;
-    transition: all 0.6s ease;
-}
-
-.menu li a:hover {
-    text-decoration: underline;
-    color: blue;
-    background-color: lightblue;
 }
 
 .container {
-    height: 150px;
-    width: 150px;
-    outline: 1px solid red;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	width: 90%;
+	margin: 0 auto;
 }
 
 main {
-    clear: both;
+	flex: 1 0 auto;
 }
 
-h1,
-h3 {
-    color: black;
-    font: bold 18px;
-    background-color: #E6E9FA;
-    font-weight: 400;
-    text-align: center;
-}
-
-/*.short - Описание товара, Дополнительно, Примечание*/
-.short + p {
-    color: #707070;
-    font: 14px;
-    font-style: italic;
-    overflow: hidden;
-}
-
-.detailed + p {
-    color: #484343;
-    font: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-}
-
-.characteristics + ul {
-    color: dimgray;
-    font-weight: 900;
-    line-height: 25px;
-    list-style-image: url(../imgs/snow.png);
-}
-
-.price + p:first-letter,
-.short + p:first-letter,
-.detailed + p:first-letter {
-    font-style: italic;
-    font-size: 200%;
-    color: #8A2BE2;
-}
-
-.nested_list {
-    list-style-image: none;
-}
-
-.price + p {
-    font: bold 14px sans-serif;
-}
-
-.price {
-    clear: both;
-}
-
-.contacts + ul {
-    list-style-type: none;
-}
-
-input[type="text"] {
-    height: 25px;
-    width: 300px;
-    color: #7F3F3F;
-    font: bold 20px serif;
-}
-
-textarea,
-legend {
-    color: #7F3F3F;
-    font: bold 20px serif;
-}
-
-input[type="email"] {
-    color: blue;
-    background-color: ;
-    height: 25px;
-    width: 300px;
-    font: bold 20px serif;
-}
-
-input[type="email"]:focus {
-    background: lightblue;
-    color: green;
-}
-
-input[type="text"],
-textarea {
-    text-transform: capitalize;
-}
-
-img {
-    outline-color: gray;
-    outline-style: double;
-    outline-width: thin;
-}
-
-img:hover {
-    outline: none;
-}
-
-.catalog {
-    display: flex;
-    list-style-type: none;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.catalog li {
-    display: block;
-    width: auto;
-}
-
-.catalog img {
-    width: 150px;
-    height: 100px;
-}
-
-fieldset {
-    width: 250px;
-}
-
-fieldset:nth-last-of-type(2) {
-    color: aqua
-}
-
-table {
-    border: 1px solid red;
-    border-collapse: collapse;
-    text-align: center
-}
-
-table td {
-    border: 1px solid red;
-    height: 70px;
-    width: auto;
-}
-
-table thead td {
-    background-color: antiquewhite;
-    height: 100px;
-}
-
-.image_for_sale {
-    display: block;
-    float: left;
-    margin-right: 5px;
-    margin-top: 0px;
-}
-
-button {
-    display: block;
-    clear: both;
-    float: left;
-    width: 300px;
-    height: 30px;
-}
-
-button:hover {
-    font: 20px bold;
-    background-color: dimgrey;
-}
-
-button:active {
-    color: green;
-    font: 20px bold;
-    background-color: dimgrey;
-}
-
-iframe {
-    width: 100%;
-    height: 374px;
-}
-
-
-footer {
-    display: block;
-    height: 80px;
-    background-color: #C9C9FA;
-    text-align: end;
-    padding-top: 50px;
-    padding-right: 30px;
+.footer {
+	height: 60px;
+	background-color: grey;
+	flex: 0 0 auto;
+	
 }
