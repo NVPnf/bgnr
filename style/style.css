@@ -7,7 +7,6 @@
 html,
 body {
 	height: 100%;
-
 }
 
 html a {
@@ -26,6 +25,10 @@ html li {
 	margin: 0 auto;
 }
 
+main {
+	flex: 1 0 auto;
+}
+
 .header {
 	display: flex;
 	width: 100%;
@@ -42,28 +45,34 @@ html li {
 
 .menu {
 	width: 100%;
+	margin-top: .5em;
+	min-width: 300px;
 }
 
 .menu-ul {
 	background-color: #BFBFBF;
-	border: 1px solid #b5b7ba;
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
 }
 
+.menu-ul-li {
+	width: 100px;
+	text-align: center;
+}
+
 .menu-ul li a {
 	display: block;
 	height: 4em;
-	min-width: 1em;
+	width: 100%;
+}
+
+.menu-ul > li > a {
+	padding-top: 1.5em;
 }
 
 .menu-ul li a:hover {
-	background-color: #AFCBD4;
-}
-
-main {
-	flex: 1 0 auto;
+	background-color: dimgrey;
 }
 
 .menu-ul li ul {
@@ -78,9 +87,9 @@ main {
 .menu-ul li:hover > ul,
 .menu-ul li ul:hover {
 	visibility: visible;
-	opacity: 1;
+	opacity: .9;
 	display: block;
-	margin-top: -2em;
+	margin-top: -.5em;
 }
 
 .footer {
@@ -88,4 +97,54 @@ main {
 	background-color: grey;
 	flex: 0 0 auto;
 
+}
+
+@media screen and (max-width: 299px) {
+	.container {
+		width: 90%;
+		min-height: 100%;
+		margin: 0 auto;
+	}
+
+	.header {
+		width: auto
+	}
+
+	.menu {
+		clear: both;
+		margin: .5em 5%;
+	}
+
+	.menu-ul {
+		flex-direction: column;
+		background-color: #BFBFBF;
+		display: flex;
+		width: 70%;
+		padding-left: 1em;
+	}
+
+	.menu-ul li a {
+		display: block;
+		height: 3em;
+		width: 11em;
+	}
+
+	.menu-ul > li > a {
+		padding-top: .5em;
+	}
+
+	.menu-ul li:hover > ul,
+	.menu-ul li ul:hover {
+		visibility: visible;
+		opacity: .9;
+		display: block;
+		margin-left: 3.5em;
+		margin-top: -2em;
+	}
+
+	.footer {
+		height: 5em;
+		background-color: darkslategrey;
+		flex: 0 0 auto;
+	}
 }
