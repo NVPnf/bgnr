@@ -9,6 +9,14 @@ body {
 
 }
 
+html a {
+	text-decoration: none;
+}
+
+html li {
+	list-style-type: none;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -17,13 +25,41 @@ body {
 	margin: 0 auto;
 }
 
+.header {
+	display: flex;
+	width: 100%;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	width: 2em;
+	height: 2em;
+}
+
+.menu-ul {
+	background-color: #dfdfdf;
+	border: 1px solid #b5b7ba;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.menu-ul li {}
+
 main {
 	flex: 1 0 auto;
+}
+
+.menu {
+	width: 100%;
 }
 
 .footer {
 	height: 60px;
 	background-color: grey;
 	flex: 0 0 auto;
-	
+
 }
