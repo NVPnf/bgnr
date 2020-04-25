@@ -4,6 +4,10 @@ fieldset {
 	min-width: 400px;
 }
 
+a {
+	color: darkslategrey;
+}
+
 main p {
 	font-size: 2em;
 }
@@ -41,6 +45,15 @@ input[type="email"] {
 	font-weight: 100;
 	color: #242424;
 	text-align: center;
+
+}
+
+button {
+	display: block;
+	width: 15em;
+	height: 5em;
+	margin-left: 40%;
+	background-color: aqua;
 
 }
 
