@@ -28,8 +28,19 @@
 		</div>
 		<main>
 			<div class="logo"><img src="imgs/1.png" alt="Логотип магазина"></div>
-			<input type="button" onclick="clickOnMe()" value="Нажми меня!" />
-			<button onclick="buyButton()" type="button">Купить <span class="likeCounter">0</span>шт.</button>
+			<div class="button-try">
+				<button type="button" onclick="clickOnMe()"> Нажми Меня</button>
+				<button onclick="buyButton()" type="button">Купить <span class="likeCounter">0</span>шт.</button>
+				<form action="#">
+					<select name="test-select" id="selecttest">
+						<option disabled>надо что-то выбрать</option>
+						<option value="5">можно это</option>
+						<option value="4">или это</option>
+						<option value="3">Даже это</option>
+						<option value="4">Ну и это можно</option>
+					</select>
+				</form>
+			</div>
 			<form action="#">
 				<fieldset title="Для связи">
 					<legend>Напишите нам</legend>

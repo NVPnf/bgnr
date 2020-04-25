@@ -21,7 +21,7 @@ html li {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -35,7 +35,9 @@ main {
 }
 
 .logo {
-	float: left;
+	display: block;
+	width: 50%;
+	margin-left: 40%;
 }
 
 .logo img {
@@ -123,6 +125,11 @@ p {
 }
 
 @media screen and (min-width: 899px) {
+	.container {
+		width: 90%;
+		min-height: 100%;
+		margin: 0 auto;
+	}
 
 	.h1-img {
 		background-color: #897D16;
@@ -131,7 +138,7 @@ p {
 
 	.logo {
 		display: block;
-		width: 100%;
+		width: 50%;
 		margin-left: 40%;
 	}
 
@@ -190,7 +197,7 @@ p {
 
 	.logo {
 		display: block;
-		width: 100%;
+		width: 50%;
 		margin-left: 40%;
 
 	}

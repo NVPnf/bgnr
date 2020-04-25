@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 fieldset {
 	width: 60%;
 	margin: 0 auto;
@@ -27,10 +33,6 @@ h2 {
 	text-align: center;
 }
 
-iframe {
-	width: 60%;
-	height: 10em;
-}
 
 input[type="checkbox"] {
 	width: 2em;
@@ -48,14 +50,29 @@ input[type="email"] {
 
 }
 
+.button-try {
+	clear: both;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
 button {
 	display: block;
 	width: 15em;
 	height: 5em;
-	margin-left: 40%;
 	background-color: aqua;
 
 }
+
+#selecttest {
+	width: 15em;
+	height: 5em;
+	background-color: #868686;
+	text-align: center;
+
+}
+
 
 textarea {
 	font-size: 0.5em;
