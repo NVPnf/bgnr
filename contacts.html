@@ -30,7 +30,7 @@
 			<div class="logo"><img src="imgs/1.png" alt="Логотип магазина"></div>
 			<div class="button-try">
 				<button type="button" onclick="clickOnMe()"> Нажми Меня</button>
-				<button onclick="buyButton()" type="button">Купить <span class="likeCounter">0</span>шт.</button>
+				<button onclick="buyButton(this)" type="button">Купить 0 шт.</button>
 				<form action="#">
 					<select name="test-select" id="selecttest">
 						<option disabled>надо что-то выбрать</option>
@@ -63,7 +63,7 @@
 			<p> Наш e&#45;mail: <a href="mailto:noname@example.com" target="_blank">noname&#64;example.com</a></p>
 
 
-			<p>Наш адрес: Платформа 3 и 1&#92;4:</p>
+			<p onmouseover="counterF(this)">Наш адрес: Платформа 3 и 1&#92;4:</p>
 			<p></p>
 		</main>
 

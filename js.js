@@ -2,10 +2,13 @@
 function clickOnMe() {
 	alert('Работает кнопачка')
 }
+let LikeCount = 0;
 
-function buyButton() {
+function buyButton(element) {
 	alert("+1");
-	document.querySelector('.likeCounter').innerText = +1;
+	LikeCount++;
+	element.innerHTML = "Купить " + LikeCount + " ШТ.";
+
 }
 //
 //let name;
@@ -16,3 +19,12 @@ function buyButton() {
 //	name = prompt('Как тебя зовут?');
 //	alert('Welcome, ' + name);
 //}
+/* при загрузке боди работает, остальное попробовать */
+//onload="alert('Получилось?')"
+
+let counter = 3;
+
+function counterF(element) {
+	counter++;
+	element.innerHTML = "Наш адрес: Платформа " + counter + " и 1&#92;4 :";
+}
