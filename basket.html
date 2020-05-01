@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Корзина</title>
+	<link rel="stylesheet" type="text/css" href="style/stylebasket.css">
+</head>
+
+<body>
+	<div class="header">
+		<div class="menu">
+			<ul class="menu-ul">
+				<li class="menu-ul-li"><a href="index.html">Главная</a></li>
+				<li class="menu-ul-li"><a href="catalog/catalog.html" title="Общий каталог">Каталог</a>
+					<ul class="hide-menu">
+						<li><a href="catalog/mmtr.html" title="Домик">Домик мумми-тролля</a></li>
+						<li><a href="catalog/hpotter.html" title="Волшебная палочка">Волшебная палочка</a></li>
+						<li><a href="catalog/alladin.html" title="Лампа">Лампа Алладина</a></li>
+					</ul>
+				</li>
+				<li class="menu-ul-li"><a href="contacts.html" title="Контакты нашего магазина">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="button-try">
+			<button type="button" onclick="clickOnMe()"> Нажми Меня</button>
+			<button onclick="buyButton(this)" type="button">Купить 0 шт.</button>
+			<form action="#">
+				<select name="test-select" id="selecttest">
+					<option disabled>надо что-то выбрать</option>
+					<option value="5">можно это</option>
+					<option value="4">или это</option>
+					<option value="3">Даже это</option>
+					<option value="4">Ну и это можно</option>
+				</select>
+			</form>
+		</div>
+	</div>
+</body></html>

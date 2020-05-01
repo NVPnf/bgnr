@@ -7,7 +7,7 @@
 fieldset {
 	width: 60%;
 	margin: 0 auto;
-	min-width: 400px;
+	min-width: 450px;
 }
 
 a {
@@ -47,32 +47,7 @@ input[type="email"] {
 	font-weight: 100;
 	color: #242424;
 	text-align: center;
-
 }
-
-.button-try {
-	clear: both;
-	width: 80%;
-	display: flex;
-	justify-content: space-around;
-}
-
-button {
-	display: block;
-	width: 15em;
-	height: 5em;
-	background-color: aqua;
-
-}
-
-#selecttest {
-	width: 15em;
-	height: 5em;
-	background-color: #868686;
-	text-align: center;
-
-}
-
 
 textarea {
 	font-size: 0.5em;
@@ -81,11 +56,16 @@ textarea {
 
 input[type="submit"],
 input[type="reset"] {
-	font-size: 1.5em;
+	display: block;
+	width: 50%;
+	float: left;
+	font-size: 2em;
 	font-weight: 100;
 	color: #242424;
 	text-align: center;
-	margin-left: 25%
+	background-color: #8598B1;
+	border-radius: 45%;
+	margin: 5% 0;
 }
 
 main li {
@@ -93,4 +73,13 @@ main li {
 	font-weight: 400;
 	color: #535353;
 	text-align: center;
+}
+
+@media screen and (min-width: 899px) {
+
+	fieldset {
+		width: 900px;
+		margin: 0 auto;
+	}
+
 }

@@ -1,0 +1,20 @@
+.button-try {
+	clear: both;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
+button {
+	display: block;
+	width: 15em;
+	height: 5em;
+	background-color: aqua;
+
+}
+
+#selecttest {
+	width: 15em;
+	height: 5em;
+	background-color: aqua;
+}
