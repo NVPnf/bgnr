@@ -1,1 +1,23 @@
-.container {}
+.catalog {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.forsale {
+	width: 30%;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.forsale img {
+	height: 80%;
+	width: 80%;
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 499px) {
+	.forsale {
+		width: 100%;
+	}
+}

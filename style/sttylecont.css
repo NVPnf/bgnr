@@ -7,7 +7,7 @@
 fieldset {
 	width: 60%;
 	margin: 0 auto;
-	min-width: 450px;
+	min-width: 250px;
 }
 
 a {
@@ -52,6 +52,7 @@ input[type="email"] {
 textarea {
 	font-size: 0.5em;
 	font-weight: 100;
+	width: 90%;
 }
 
 input[type="submit"],
@@ -79,6 +80,15 @@ main li {
 
 	fieldset {
 		width: 900px;
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 499px) {
+
+	fieldset {
+		width: 150px;
 		margin: 0 auto;
 	}
 

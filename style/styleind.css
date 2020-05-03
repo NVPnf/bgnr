@@ -71,7 +71,6 @@ main {
 	background-color: #6C87E3;
 }
 
-
 .menu-ul ul {
 	opacity: 0;
 	transition: all .1s ease-out;
@@ -86,6 +85,18 @@ main {
 	display: block;
 	position: absolute;
 }
+
+.menu-ul li ul li a {
+	display: inline-block;
+	width: 100%;
+	height: 3em;
+	font-size: 1.5em;
+	line-height: 1em;
+	text-align: center;
+	background-color: #c9c9c9;
+	padding-top: 1em;
+}
+
 
 #nav_button {
 	display: none;
@@ -135,18 +146,6 @@ p {
 		height: 10em;
 	}
 
-	.menu-ul {
-		font-size: 2em;
-		font-weight: 600;
-		color: #212121;
-		text-align: center;
-	}
-
-	.menu-ul li {
-		display: block;
-		width: 8em;
-	}
-
 	h1 {
 		font-size: 5em;
 		font-weight: 600;
@@ -172,6 +171,7 @@ p {
 
 @media screen and (max-width: 399px) {
 	.container {
+		min-width: 150px;
 		width: 90%;
 		min-height: 100%;
 		margin: 0 auto;
@@ -184,18 +184,14 @@ p {
 
 	.logo {
 		position: absolute;
-		margin: 90% 20%;
-
+		margin-left: 70%;
 	}
 
 	.logo img {
-		width: 12em;
-		height: 12em;
-		margin: 0 auto;
+		height: 3em;
 	}
 
 	.menu {
-		display: inline-block;
 		position: relative;
 		width: auto;
 	}
@@ -217,20 +213,22 @@ p {
 	.menu-ul {
 		display: none;
 		position: absolute;
-		top: 0;
 		width: 100%;
 		z-index: 20;
 	}
 
 	.menu-ul li {
 		display: list-item;
-		border-top: none;
+		outline: 1px solid grey;
 	}
 
 	.menu-ul li a {
-		display: block;
+		display: inline-block;
+		width: 100%;
 		height: 2em;
-
+		line-height: 2em;
+		font-size: 1.2em;
+		text-align: center;
 	}
 
 	#nav_button {
@@ -244,26 +242,26 @@ p {
 
 	.menu:hover ul,
 	.menu.open_nav ul {
-		display: block;
-		margin-top: 50px;
+		display: table-column;
 	}
 
 	.menu-ul li ul li a {
-		padding-top: 0;
-		font-size: .5em;
-		font-weight: 300;
-		color: #2e353d;
+		display: inline-block;
+		width: 100%;
+		height: 3em;
+		font-size: 1em;
+		line-height: 1em;
 		text-align: center;
-
+		background-color: #c9c9c9;
 	}
+
 
 	.menu-ul li:hover > ul,
 	.menu-ul li ul:hover {
 		visibility: visible;
 		opacity: .9;
 		display: block;
-		margin-left: 3.5em;
-
+		margin-left: 5em;
 	}
 
 	.footer {
