@@ -38,8 +38,13 @@ main {
 .logo img {
 	height: 5em;
 	border-radius: 50%;
+	margin-right: 1em;
 }
 
+.basket img {
+	margin-left: 1em;
+	height: 5em;
+}
 
 .menu {
 	display: table;
@@ -119,7 +124,7 @@ h1 {
 	border-radius: 90%;
 }
 
-p {
+.index {
 	margin-top: 2em;
 	font-size: 2em;
 	font-weight: 100;
@@ -184,11 +189,20 @@ p {
 
 	.logo {
 		position: absolute;
+		margin-left: 40%;
+	}
+
+	.basket {
 		margin-left: 70%;
 	}
 
 	.logo img {
 		height: 3em;
+	}
+
+	.basket img {
+		height: 2em;
+		margin-left: 0;
 	}
 
 	.menu {

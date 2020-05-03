@@ -6,12 +6,13 @@
 	<title> Магазин интересностей </title>
 	<link rel="stylesheet" type="text/css" href="../style/styleind.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/stylepagecat.css">
 </head>
 
 <body>
 	<div class="container">
 		<div class="header">
-			<div class="logo"><img src="../imgs/logo.png" alt="Логотип магазина"></div>
+			<div class="logo"><a href="../index.html" title="back to main"><img src="../imgs/logo.png" alt="Логотип магазина"></a></div>
 			<div class="menu">
 				<span id="nav_button">&equiv;</span>
 				<ul class="menu-ul">
@@ -26,12 +27,13 @@
 					<li class="menu-ul-li"><a href="../contacts.html" title="Контакты нашего магазина">Контакты</a></li>
 				</ul>
 			</div>
+			<div class="basket"><a href="../basket.html" title="Check basket"><img src="../imgs/basket.png" alt="Корзина"></a></div>
 		</div>
 
 		<main>
 			<h1> Лампа Алладина </h1>
 			<a href="../imgs/lamp.jpg" target="_blank"><img src="../imgs/lamp.jpg" width="300" height="170" alt="Лампа Алладина" class="image_for_sale"></a>
-			<button type="button">Купить</button>
+			<button type="button" onclick="buyButton(this)">Купить</button>
 
 			<h3 class="short"> Описание товара </h3>
 			<p> Та&nbsp;самая лампа, которая была найдена в&nbsp;пещерах самим Алладином. Проведена предпродажная подготовка, снаружи от&nbsp;масла полностью очищена, но&nbsp;своих свойств по&nbsp;вызову джинна не&nbsp;поменяла. </p>
@@ -93,8 +95,8 @@
 			<p>Принцесса Жасмин возврату не&nbsp;подлежит </p>
 		</main>
 		<a href="hpotter.html"> Предыдущий товар </a>
-		<hr>
-		<div class="footer"> Все права защищены &copy;&nbsp;2020 </div>
-	</div>
 
+	</div>
+	<div class="footer"> Все права защищены &copy;&nbsp;2020 </div>
+	<script src="../scripts/js.js"></script>
 </body></html>

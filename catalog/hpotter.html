@@ -6,32 +6,32 @@
 	<title> Магазин интересностей </title>
 	<link rel="stylesheet" type="text/css" href="../style/styleind.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/stylepagecat.css">
 </head>
 
 <body>
-	<div class="container">
-		<div class="header">
-			<div class="logo"><img src="../imgs/logo.png" alt="Логотип магазина"></div>
-			<div class="menu">
-				<span id="nav_button">&equiv;</span>
-				<ul class="menu-ul">
-					<li class="menu-ul-li"><a href="../index.html">Главная</a></li>
-					<li class="menu-ul-li"><a href="catalog.html" title="Общий каталог">Каталог</a>
-						<ul class="hide-menu">
-							<li><a href="mmtr.html" title="Домик">Домик мумми-тролля</a></li>
-							<li><a href="hpotter.html" title="Волшебная палочка">Волшебная палочка</a></li>
-							<li><a href="alladin.html" title="Лампа">Лампа Алладина</a></li>
-						</ul>
-					</li>
-					<li class="menu-ul-li"><a href="../contacts.html" title="Контакты нашего магазина">Контакты</a></li>
-				</ul>
-			</div>
+	<div class="header">
+		<div class="logo"><img src="../imgs/logo.png" alt="Логотип магазина"></div>
+		<div class="menu">
+			<span id="nav_button">&equiv;</span>
+			<ul class="menu-ul">
+				<li class="menu-ul-li"><a href="../index.html">Главная</a></li>
+				<li class="menu-ul-li"><a href="catalog.html" title="Общий каталог">Каталог</a>
+					<ul class="hide-menu">
+						<li><a href="mmtr.html" title="Домик">Домик мумми-тролля</a></li>
+						<li><a href="hpotter.html" title="Волшебная палочка">Волшебная палочка</a></li>
+						<li><a href="alladin.html" title="Лампа">Лампа Алладина</a></li>
+					</ul>
+				</li>
+				<li class="menu-ul-li"><a href="../contacts.html" title="Контакты нашего магазина">Контакты</a></li>
+			</ul>
 		</div>
+	</div>
+	<div class="container">
 		<main>
-
 			<h1> Волшебная палочка Гарри Поттера </h1>
 			<a href="../imgs/harry.jpg" target="_blank"><img src="../imgs/harry.jpg" width="300" height="150" alt="Волшебная палочка" class="image_for_sale"></a>
-			<button type="button">Купить</button>
+			<button type="button" onclick="buyButton(this)">Купить</button>
 
 			<h3 class="short"> Описание товара </h3>
 			<p> Настоящая волшебная палочка Гарри Поттера. <br> Подойдет для любого человека, который решил переквалифицироваться в&nbsp;волшебника прямо сегодня! <br> Палочка сделана из&nbsp;остролиста с&nbsp;сердцевиной из&nbsp;пера феникса, её&nbsp;сделал мастер Олливандер. </p>
@@ -56,7 +56,8 @@
 			<p> Сертификаты в&nbsp;наличии <br> в&nbsp;подарок может идти нанесение шрама на&nbsp;лоб&nbsp;&mdash; по&nbsp;желанию покупателя </p>
 		</main>
 		<a href="mmtr.html"> Предыдущий товар </a> <br> <a href="alladin.html"> Следующий товар </a>
-		<hr>
-		<div class="footer"> Все права защищены &copy;&nbsp;2020 </div>
+
 	</div>
+	<div class="footer"> Все права защищены &copy;&nbsp;2020 </div>
+	<script src="../scripts/js.js"></script>
 </body></html>

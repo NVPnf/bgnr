@@ -1,15 +1,23 @@
 //document.querySelector('like-button').click()
-function clickOnMe() {
-	alert('Работает кнопачка')
-}
-let LikeCount = 0;
+//function clickOnMe() {
+//	alert('Работает кнопачка')
+//}
+//
+
+localStorage.setItem('Count', "");
+let i = 0;
 
 function buyButton(element) {
-	alert("+1");
-	LikeCount++;
-	element.innerHTML = "Купить " + LikeCount + " ШТ.";
-
+	i++;
+	localStorage.setItem('Count', JSON.stringify(i));
+	element.innerHTML = "В корзине " + localStorage.getItem('Count') + " шт.";
 }
+
+console.log(typeof 'Count');
+
+
+
+
 //
 //let name;
 //let age = prompt('How old are you?');
@@ -22,9 +30,9 @@ function buyButton(element) {
 /* при загрузке боди работает, остальное попробовать */
 //onload="alert('Получилось?')"
 
-let counter = 3;
-
-function counterF(element) {
-	counter++;
-	element.innerHTML = "Наш адрес: Платформа " + counter + " и 1&#92;4 :";
-}
+//let counter = 3;
+//
+//function counterF(element) {
+//	counter++;
+//	element.innerHTML = "Наш адрес: Платформа " + counter + " и 1&#92;4 :";
+//}
