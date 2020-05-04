@@ -2,10 +2,13 @@
 //function clickOnMe() {
 //	alert('Работает кнопачка')
 //}
-//
-
-localStorage.setItem('Count', "");
+////
 let i = 0;
+
+if (localStorage.getItem('Count') !== null) {
+	document.getElementById('buyLamp').innerHTML = "В корзине " + localStorage.getItem('Count') + " шт.";
+	i = JSON.parse(localStorage.getItem('Count'));
+}
 
 function buyButton(element) {
 	i++;
